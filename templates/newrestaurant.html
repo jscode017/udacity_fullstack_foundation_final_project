@@ -1,0 +1,11 @@
+<html>
+<head> <h1>Create new restaurant </h1></head>
+<body>
+	<form action='{{url_for('newrestaurants')}}' method='POST'>
+		<input type='text' size='30' placeholder='new restaurant name' name='name'>
+		<input type='submit' value='Create'>
+	</form>
+	<a href='{{url_for('show_all_restaurants')}}'>Cancel</a>
+
+</body>
+</html>
